@@ -12,7 +12,7 @@ This is an artisan command to convert your current SQL database schema into a La
 }
 ```
 
-2. Add `'Adamkearsley\ConvertMigrations\ConvertMigrationsServiceProvider'` to your `app/config/app.php` file, inside the `providers` array.
+2. Add `'Adamkearsley\ConvertMigrations\ConvertMigrationsServiceProvider:class'` to your `app/config/app.php` file, inside the `providers` array.
 
 ## Usage
 
