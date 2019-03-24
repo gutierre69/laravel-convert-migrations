@@ -1,4 +1,4 @@
-# Laravel Convert Migrations
+# Larave 5.4+ Convert Migrations
 
 This is an artisan command to convert your current SQL database schema into a Laravel 5.4+ Migration file. It'll come really handy when you have started a Laravel project without using migrations, or if you're migrating an old app to Laravel.
 
