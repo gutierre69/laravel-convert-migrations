@@ -69,11 +69,15 @@ class SqlMigrations
  
         $schema = "<?php
  
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
 //
 // NOTE Migration Created: " . date("Y-m-d H:i:s") . "
 // --------------------------------------------------
  
-class Create" . str_replace('_', '', Str::title(self::$database)) . "Database {
+class Create" . str_replace('_', '', Str::title(self::$database)) . "Database extends Migration  {
 //
 // NOTE - Make changes to the database.
 // --------------------------------------------------
@@ -216,10 +220,10 @@ public function down()
                 if ($values->Key == 'PRI') {
                     $method = 'increments';
                 }
-                $up .= " $" . "table->{$method}('{$values->Field}'{$choices}{$numbers}){$nullable}{$default}{$unsigned}{$unique};\n";
+                $up .= "\t$" . "table->{$method}('{$values->Field}'{$choices}{$numbers}){$nullable}{$default}{$unsigned}{$unique};\n";
             }
  
-            $up .= " });\n\n";
+            $up .= "});\n\n";
             self::$schema[$value->table_name] = array(
                 'up' => $up,
                 'down' => $down
