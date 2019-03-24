@@ -8,7 +8,7 @@ This is an artisan command to convert your current SQL database schema into a La
 
 ```json
 "require": {
-    "gutierre69/convert-migrations": "dev-master"
+    "gutierre69/laravel-convert-migrations": "dev-master"
 }
 ```
 
