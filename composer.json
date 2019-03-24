@@ -1,5 +1,5 @@
 {
-    "name": "gutierre69/convert-migrations",
+    "name": "gutierre69/laravel-convert-migrations",
     "description": "Artisan command to convert your current SQL database schema into a Laravel 5.4+ Migration file.",
     "authors": [
         {
